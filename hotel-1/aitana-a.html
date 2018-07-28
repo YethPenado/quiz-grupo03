@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoteles - Aitana Crown</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h1>HOTEL AITANA CROWN</h1>
+
+        <div class="buttons">
+            <a class="info" href="#rooms">Información</a>
+            <a class="questions" href="#form">Consultas</a>
+        </div>
+
+        <!--INFORMACIÓN DEL HOTEL-->
+        <div id="description">
+            <p>
+                En este pequeño hotel de 4 estrellas encontrará espacios comunes cómodos y refinados, habitaciones que disponen de todas las comodidades como Internet Wi-Fi gratuito, aire acondicionado/calefacción, caja de caudales electrónica
+                y minibar, además de una recepción plurilingüe disponible las 24 horas del día para cualquier solicitud o necesidad, desde la sencilla información sobre los eventos de la ciudad hasta la reserva de restaurantes, conciertos y excursiones turísticas personalizadas.
+            </p>
+        </div>
+
+        <!--HABITACIONES-->
+        <div id="rooms">
+            <h2>Habitaciones disponibles en Hallstatt, Austria</h2>
+            <section class="room">
+                <img src="../hotel-1/img/aitama-room-1.jpg" alt="">
+                <h4>Apolo Suite</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-1/img/aitama-room-2.jpg" alt="">
+                <h4>Chantiery Suite</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-1/img/aitama-room-3.jpg" alt="">
+                <h4>Venus Suite</h4>
+            </section>
+        </div>
+
+        <!--CONSULTAS (Formulario)-->
+        <div id="form">
+            <h2>Consultas</h2>
+            <legend>¿Tiene alguna consulta? Por favor complete este formulario para atender de forma satisfactoria a sus preguntas.</legend>
+            </br>
+            <form action="GET">
+                <fieldset>
+                    <!--Nombre(requerido)-->
+                    <label for="nombre">Nombre</label>
+                    </br>
+                    <input type="text" class="form-input" name="nombre" value="" size="50" required placeholder="Ingrese su nombre completo" id="name" />
+                    </br>
+
+                    <!--Correo Electrónico(requerido)-->
+                    <label for="correo">Correo Electrónico</label>
+                    </br>
+                    <input type="email" class="form-input" name="correo" value="" size="50" required placeholder="Ingrese su correo electrónico" id="email" />
+                    </br>
+
+                    <!--Número de teléfono(opcional)-->
+                    <label for="telefono">Número Telefónico</label>
+                    </br>
+                    <input type="tel" class="form-input" name="telefono" value="" size="50" placeholder="Ingrese su número telefónico" id="telephone"/>
+                    </br>
+
+                    <!--Consultas-->
+                    <label for="consultas">Consultas</label>
+                    </br>
+                    <textarea name="consulta" class="form-input" value="" cols="51px" rows="8px" required placeholder="Por favor, escriba su consulta" id="question"></textarea>
+                    </br>
+
+                    <!--Submit (enviar formulario)-->
+                    <label for="enviar"></label>
+                    </br>
+                    <input type="submit" name="enviar" value="Enviar" id="submit"/>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    
+<footer>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoteles - Hotel Hilton Royale</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h1>HOTEL HILTON ROYALE</h1>
+
+        <div class="buttons">
+            <a class="info" href="#rooms">Información</a>
+            <a class="questions" href="#form">Consultas</a>
+        </div>
+
+        <!--INFORMACIÓN DEL HOTEL-->
+        <div id="description">
+            <p>
+                La cadena de hoteles 5 estrellas Hilton Royale se caracteriza por brindarle el servicio de mejor calidad y lujo a todos sus huéspedes; desde habitaciones discretas, hasta las suites más lujosas y extravagantes de la industria hotelera. Distribuido a lo largo de 95 países, nuestro compromiso es ofrecerle la mejor estadía mientras disfruta de las maravillas del mundo. No se pierda la oportunidad de vivir la experiencia Royale. ¡Reserve hoy mismo!
+            </p>
+        </div>
+
+        <!--HABITACIONES-->
+        <div id="rooms">
+            <h2>Suites disponibles en Amsterdam, Países Bajos</h2>
+            <section class="room">
+                <img src="../hotel-2/img/royale-room-1.jpg" alt="">
+                <h4>Roller Devil Suite</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-2/img/royale-room-2.jpg" alt="">
+                <h4>White Gold Suite</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-2/img/royale-room-3.jpg" alt="">
+                <h4>Student Life Suite</h4>
+            </section>
+        </div>
+
+        <!--CONSULTAS (Formulario)-->
+        <div id="form">
+            <h2>Consultas</h2>
+            <legend>¿Tiene alguna consulta? Por favor complete este formulario para atender de forma satisfactoria a sus preguntas.</legend>
+            </br>
+            <form action="GET">
+                <fieldset>
+                    <!--Nombre (Requerido)-->
+                    <label for="nombre">Nombre</label>
+                    <br/>
+                    <input type="text" class="form-input" name="nombre" value="" size="50" required placeholder="Ingrese su nombre completo" id="name"/>
+                    </br>
+
+                    <!--Correo Electrónico (Requerido)-->
+                    <label for="correo">Correo Electrónico</label>
+                    </br>
+				    <input type="email" class="form-input" name="correo" value="" size="50" required placeholder="Ingrese su correo electrónico" id="email"/>
+                    </br>
+                    
+                    <!--Número de teléfono (opcional)-->
+                    <label for="telefono">Número telefónico</label>
+                    </br>
+                    <input type="tel" class="form-input" name="telefono" value="" size="50" placeholder="Ingrese su número telefónico" id="telephone"/>
+                    </br>
+
+                    <!--Consultas-->
+                    <label for="consulta">Consultas</label>
+                    </br>
+				    <textarea name="consulta" class="form-input" value= "" cols="51px" rows="8px" requiered placeholder="Por favor, escriba su consulta" id="question"></textarea> 
+                    </br>
+                    
+                    <!--Submit (enviar formulario)-->
+                    <label for="enviar"></label>
+                    </br>
+                    <input type="submit" name="enviar" value="Enviar" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

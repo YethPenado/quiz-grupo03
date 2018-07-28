@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoteles - Kastil</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h1>HOTEL KASTIL</h1>
+
+        <div class="buttons">
+            <a class="info" href="#rooms">Información</a>
+            <a class="questions" href="#form">Consultas</a>
+        </div>
+
+        <!--INFORMACIÓN DEL HOTEL-->
+        <div id="description">
+            <p>
+                ¿En busca del mejor hospedaje para tus vacaciones? ¡Reserva ahora mismo en el Hotel Kastil! Tenemos precios increíbles y sin cargos extras. La más amplia variedad de ofertas, precios bajos, hermosas habitaciones y mucho más. Anímese a vivir una experiencia única y confortable con Hoteles Kastil.
+            </p>
+        </div>
+
+        <!--HABITACIONES-->
+        <div id="rooms">
+            <h2>Habitaciones y suites disponibles en Hallstatt, Austria</h2>
+            <section class="room">
+                <img src="../hotel-1/img/kastil-room-1.jpg" alt="">
+                <h4>Villa Danielle</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-1/img/kastil-room-2.jpg" alt="">
+                <h4>Zlatnit Suite</h4>
+            </section>
+
+            <section class="room">
+                <img src="../hotel-1/img/kastil-room-3.jpg" alt="">
+                <h4>Milna Resort</h4>
+            </section>
+        </div>
+
+        <!--CONSULTAS (Formulario)-->
+        <div id="form">
+            <h2>Consultas</h2>
+            <legend>¿Tiene alguna consulta? Por favor complete este formulario para atenderle.</legend>
+            </br>
+            <form action="GET">
+                <fieldset>
+                    <!--Nombre (Requerido)-->
+                    <label for="nombre">Nombre</label>
+                    <br/>
+                    <input type="text" class="form-input" name="nombre" value="" size="50" required placeholder="Ingrese su nombre completo" id="name"/>
+                    </br>
+
+                    <!--Correo Electrónico (Requerido)-->
+                    <label for="correo">Correo Electrónico</label>
+                    </br>
+				    <input type="email" class="form-input" name="correo" value="" size="50" required placeholder="Ingrese su correo electrónico" id="email"/>
+                    </br>
+                    
+                    <!--Número de teléfono (opcional)-->
+                    <label for="telefono">Número telefónico</label>
+                    </br>
+                    <input type="tel" class="form-input" name="telefono" value="" size="50" placeholder="Ingrese su número telefónico" id="telephone"/>
+                    </br>
+
+                    <!--Consultas-->
+                    <label for="consulta">Consultas</label>
+                    </br>
+				    <textarea name="consulta" class="form-input" value= "" cols="51px" rows="8px" requiered placeholder="Por favor, escriba su consulta" id="question"></textarea>
+                    </br>
+                    
+                    <!--Submit (enviar formulario)-->
+                    <label for="enviar"></label>
+                    </br>
+                    <input type="submit" name="enviar" value="Enviar" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+<footer>
+</footer>
+
+</body>
+</html>

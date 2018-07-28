@@ -1,0 +1,39 @@
+*{
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    padding: 8px;
+}
+footer {
+    background-color: #610048;
+    height: 80px; 
+    margin-top: 12px;
+}
+h1 {
+    background-color: #cfB0c7;
+    border: 1px solid #b7aec9;
+    border-radius: 10px;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+header{
+    background-color: #610048;
+    height: 80px;
+    margin-bottom: 12px;
+}
+.galery{
+    padding: 50px 30px;
+}
+.photos {
+    border: 1px solid black;
+    display: inline-block;
+    height: 572px;
+    margin-left: 65px;
+    width: 500px;
+}
